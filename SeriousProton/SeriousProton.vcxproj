@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B05B8321-E1A1-4F82-9726-C670D0B4E45F}</ProjectGuid>
+    <RootNamespace>SeriousProton</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;__PRETTY_FUNCTION__=__FUNCSIG__;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\dirent\include;$(SolutionDir)..\SeriousProton\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;__PRETTY_FUNCTION__=__FUNCSIG__;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\dirent\include;$(SolutionDir)..\SeriousProton\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;__PRETTY_FUNCTION__=__FUNCSIG__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\dirent\include;$(SolutionDir)..\SeriousProton\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;__PRETTY_FUNCTION__=__FUNCSIG__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\dirent\include;$(SolutionDir)..\SeriousProton\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\b2BroadPhase.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\b2CollideCircle.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\b2CollideEdge.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\b2CollidePolygon.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\b2Collision.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\b2Distance.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\b2DynamicTree.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\b2TimeOfImpact.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\Shapes\b2ChainShape.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\Shapes\b2CircleShape.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\Shapes\b2EdgeShape.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Collision\Shapes\b2PolygonShape.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Common\b2BlockAllocator.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Common\b2Draw.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Common\b2Math.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Common\b2Settings.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Common\b2StackAllocator.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Common\b2Timer.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\b2Body.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\b2ContactManager.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\b2Fixture.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\b2Island.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\b2World.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\b2WorldCallbacks.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2CircleContact.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2Contact.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2ContactSolver.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2PolygonContact.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2DistanceJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2FrictionJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2GearJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2Joint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2MotorJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2MouseJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2PulleyJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2RopeJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2WeldJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2WheelJoint.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Box2D\Rope\b2Rope.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\clipboard.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\collisionable.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\engine.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\event.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\fixedSocket.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\gameEntity.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\GL\glew.c" />
+    <ClCompile Include="..\..\SeriousProton\src\httpServer.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\input.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\logging.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lapi.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lauxlib.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lbaselib.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lbitlib.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lcode.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lcorolib.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lctype.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\ldblib.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\ldebug.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\ldo.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\ldump.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lfunc.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lgc.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\llex.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lmathlib.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lmem.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\loadlib.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lobject.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lopcodes.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lparser.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lstate.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lstring.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lstrlib.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\ltable.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\ltablib.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\ltm.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lundump.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lvm.c" />
+    <ClCompile Include="..\..\SeriousProton\src\lua\lzio.c" />
+    <ClCompile Include="..\..\SeriousProton\src\multiplayer.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\multiplayer_client.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\multiplayer_server.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\multiplayer_server_scanner.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\networkAudioStream.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\networkRecorder.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\PlayerController.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\postProcessManager.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\random.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Renderable.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\resources.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\scriptInterface.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\scriptInterfaceMagic.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\soundManager.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\stringImproved.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\textureManager.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\Updatable.cpp" />
+    <ClCompile Include="..\..\SeriousProton\src\windowManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Box2D.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\b2BroadPhase.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\b2Collision.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\b2Distance.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\b2DynamicTree.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\b2TimeOfImpact.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\Shapes\b2ChainShape.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\Shapes\b2CircleShape.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\Shapes\b2EdgeShape.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\Shapes\b2PolygonShape.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Collision\Shapes\b2Shape.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Common\b2BlockAllocator.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Common\b2Draw.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Common\b2GrowableStack.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Common\b2Math.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Common\b2Settings.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Common\b2StackAllocator.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Common\b2Timer.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\b2Body.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\b2ContactManager.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\b2Fixture.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\b2Island.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\b2TimeStep.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\b2World.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2CircleContact.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2Contact.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2ContactSolver.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Contacts\b2PolygonContact.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2DistanceJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2FrictionJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2GearJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2Joint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2MotorJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2MouseJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2PrismaticJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2PulleyJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2RevoluteJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2RopeJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2WeldJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Dynamics\Joints\b2WheelJoint.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Box2D\Rope\b2Rope.h" />
+    <ClInclude Include="..\..\SeriousProton\src\clipboard.h" />
+    <ClInclude Include="..\..\SeriousProton\src\collisionable.h" />
+    <ClInclude Include="..\..\SeriousProton\src\engine.h" />
+    <ClInclude Include="..\..\SeriousProton\src\event.h" />
+    <ClInclude Include="..\..\SeriousProton\src\fixedSocket.h" />
+    <ClInclude Include="..\..\SeriousProton\src\gameEntity.h" />
+    <ClInclude Include="..\..\SeriousProton\src\GL\glew.h" />
+    <ClInclude Include="..\..\SeriousProton\src\GL\glxew.h" />
+    <ClInclude Include="..\..\SeriousProton\src\GL\wglew.h" />
+    <ClInclude Include="..\..\SeriousProton\src\httpServer.h" />
+    <ClInclude Include="..\..\SeriousProton\src\input.h" />
+    <ClInclude Include="..\..\SeriousProton\src\logging.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lapi.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lauxlib.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lcode.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lctype.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\ldebug.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\ldo.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lfunc.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lgc.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\llex.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\llimits.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lmem.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lobject.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lopcodes.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lparser.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lprefix.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lstate.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lstring.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\ltable.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\ltm.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lua.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lua.hpp" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\luaconf.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lualib.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lundump.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lvm.h" />
+    <ClInclude Include="..\..\SeriousProton\src\lua\lzio.h" />
+    <ClInclude Include="..\..\SeriousProton\src\multiplayer.h" />
+    <ClInclude Include="..\..\SeriousProton\src\multiplayer_client.h" />
+    <ClInclude Include="..\..\SeriousProton\src\multiplayer_internal.h" />
+    <ClInclude Include="..\..\SeriousProton\src\multiplayer_server.h" />
+    <ClInclude Include="..\..\SeriousProton\src\multiplayer_server_scanner.h" />
+    <ClInclude Include="..\..\SeriousProton\src\networkAudioStream.h" />
+    <ClInclude Include="..\..\SeriousProton\src\networkRecorder.h" />
+    <ClInclude Include="..\..\SeriousProton\src\P.h" />
+    <ClInclude Include="..\..\SeriousProton\src\PlayerController.h" />
+    <ClInclude Include="..\..\SeriousProton\src\postProcessManager.h" />
+    <ClInclude Include="..\..\SeriousProton\src\random.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Renderable.h" />
+    <ClInclude Include="..\..\SeriousProton\src\resources.h" />
+    <ClInclude Include="..\..\SeriousProton\src\scriptInterface.h" />
+    <ClInclude Include="..\..\SeriousProton\src\scriptInterface.hpp" />
+    <ClInclude Include="..\..\SeriousProton\src\scriptInterfaceMagic.h" />
+    <ClInclude Include="..\..\SeriousProton\src\scriptInterfaceMagic.hpp" />
+    <ClInclude Include="..\..\SeriousProton\src\soundManager.h" />
+    <ClInclude Include="..\..\SeriousProton\src\stringImproved.h" />
+    <ClInclude Include="..\..\SeriousProton\src\textureManager.h" />
+    <ClInclude Include="..\..\SeriousProton\src\tween.h" />
+    <ClInclude Include="..\..\SeriousProton\src\Updatable.h" />
+    <ClInclude Include="..\..\SeriousProton\src\vectorUtils.h" />
+    <ClInclude Include="..\..\SeriousProton\src\windowManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\sfml-graphics.redist.2.3.2.0\build\native\sfml-graphics.redist.targets" Condition="Exists('..\packages\sfml-graphics.redist.2.3.2.0\build\native\sfml-graphics.redist.targets')" />
+    <Import Project="..\packages\sfml-system.redist.2.3.2.0\build\native\sfml-system.redist.targets" Condition="Exists('..\packages\sfml-system.redist.2.3.2.0\build\native\sfml-system.redist.targets')" />
+    <Import Project="..\packages\sfml-system.2.3.2.0\build\native\sfml-system.targets" Condition="Exists('..\packages\sfml-system.2.3.2.0\build\native\sfml-system.targets')" />
+    <Import Project="..\packages\sfml-window.redist.2.3.2.0\build\native\sfml-window.redist.targets" Condition="Exists('..\packages\sfml-window.redist.2.3.2.0\build\native\sfml-window.redist.targets')" />
+    <Import Project="..\packages\sfml-window.2.3.2.0\build\native\sfml-window.targets" Condition="Exists('..\packages\sfml-window.2.3.2.0\build\native\sfml-window.targets')" />
+    <Import Project="..\packages\sfml-graphics.2.3.2.0\build\native\sfml-graphics.targets" Condition="Exists('..\packages\sfml-graphics.2.3.2.0\build\native\sfml-graphics.targets')" />
+    <Import Project="..\packages\sfml-audio.redist.2.3.2.0\build\native\sfml-audio.redist.targets" Condition="Exists('..\packages\sfml-audio.redist.2.3.2.0\build\native\sfml-audio.redist.targets')" />
+    <Import Project="..\packages\sfml-audio.2.3.2.0\build\native\sfml-audio.targets" Condition="Exists('..\packages\sfml-audio.2.3.2.0\build\native\sfml-audio.targets')" />
+    <Import Project="..\packages\sfml-network.redist.2.3.2.0\build\native\sfml-network.redist.targets" Condition="Exists('..\packages\sfml-network.redist.2.3.2.0\build\native\sfml-network.redist.targets')" />
+    <Import Project="..\packages\sfml-network.2.3.2.0\build\native\sfml-network.targets" Condition="Exists('..\packages\sfml-network.2.3.2.0\build\native\sfml-network.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\sfml-graphics.redist.2.3.2.0\build\native\sfml-graphics.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-graphics.redist.2.3.2.0\build\native\sfml-graphics.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-system.redist.2.3.2.0\build\native\sfml-system.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-system.redist.2.3.2.0\build\native\sfml-system.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-system.2.3.2.0\build\native\sfml-system.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-system.2.3.2.0\build\native\sfml-system.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-window.redist.2.3.2.0\build\native\sfml-window.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-window.redist.2.3.2.0\build\native\sfml-window.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-window.2.3.2.0\build\native\sfml-window.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-window.2.3.2.0\build\native\sfml-window.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-graphics.2.3.2.0\build\native\sfml-graphics.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-graphics.2.3.2.0\build\native\sfml-graphics.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-audio.redist.2.3.2.0\build\native\sfml-audio.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-audio.redist.2.3.2.0\build\native\sfml-audio.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-audio.2.3.2.0\build\native\sfml-audio.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-audio.2.3.2.0\build\native\sfml-audio.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-network.redist.2.3.2.0\build\native\sfml-network.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-network.redist.2.3.2.0\build\native\sfml-network.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-network.2.3.2.0\build\native\sfml-network.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-network.2.3.2.0\build\native\sfml-network.targets'))" />
+  </Target>
+</Project>

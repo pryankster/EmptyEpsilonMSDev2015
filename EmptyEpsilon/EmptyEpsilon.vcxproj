@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A467C95-67C6-4C31-8584-DC66AD16AE2A}</ProjectGuid>
+    <RootNamespace>EmptyEpsilon</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\dirent\include;$(SolutionDir)..\EmptyEpsilon\src;$(SolutionDir)..\SeriousProton\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;__PRETTY_FUNCTION__=__FUNCSIG__;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>iphlpapi.lib;opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\dirent\include;$(SolutionDir)..\EmptyEpsilon\src;$(SolutionDir)..\SeriousProton\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;__PRETTY_FUNCTION__=__FUNCSIG__;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>iphlpapi.lib;opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\dirent\include;$(SolutionDir)..\EmptyEpsilon\src;$(SolutionDir)..\SeriousProton\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;__PRETTY_FUNCTION__=__FUNCSIG__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>iphlpapi.lib;opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)..\dirent\include;$(SolutionDir)..\EmptyEpsilon\src;$(SolutionDir)..\SeriousProton\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;__PRETTY_FUNCTION__=__FUNCSIG__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>iphlpapi.lib;opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\EmptyEpsilon\src\ai\ai.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\ai\aiFactory.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\ai\fighterAI.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\ai\missileVolleyAI.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\beamTemplate.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\commsScriptInterface.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\epsilonServer.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\factionInfo.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gameGlobalInfo.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\GMScriptCallback.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\colorConfig.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\debugRenderer.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_advancedscrolltext.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_arrow.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_arrowbutton.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_autolayout.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_button.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_canvas.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_container.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_element.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_entrylist.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_image.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_keyvaluedisplay.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_label.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_listbox.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_overlay.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_panel.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_progressbar.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_resizabledialog.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_rotationdial.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_scrollbar.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_scrolltext.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_selector.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_slider.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_textentry.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\gui2_togglebutton.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\mouseRenderer.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\gui\scriptError.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\dmx512SerialDevice.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\enttecDMXProDevice.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\hardwareController.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\hardwareMappingEffects.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\hardwareOutputDevice.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\sACNDMXDevice.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\serialDriver.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\virtualOutputDevice.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\httpScriptAccess.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\main.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\menus\autoConnectScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\menus\joinServerMenu.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\menus\mainMenus.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\menus\optionsMenu.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\menus\serverBrowseMenu.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\menus\serverCreationScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\menus\shipSelectionScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\mesh.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\missileWeaponData.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\modelData.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\modelInfo.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\mouseCalibrator.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\packResourceProvider.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\particleEffect.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\pathPlanner.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\playerInfo.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\preferenceManager.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\repairCrew.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\scienceDatabase.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\aimLock.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\alertOverlay.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\beamFrequencySelector.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\beamTargetSelector.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\combatManeuver.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\commsOverlay.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\databaseView.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\dockingButton.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\frequencyCurve.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\globalMessage.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\impulseControls.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\indicatorOverlays.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\jumpControls.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\jumpIndicator.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\mainScreenControls.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\missileTubeControls.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\noiseOverlay.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\openCommsButton.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\powerDamageIndicator.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\radarView.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\rawScannerDataRadarOverlay.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\rotatingModelView.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\scanningDialog.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\scanTargetButton.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\selfDestructButton.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\selfDestructEntry.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\selfDestructIndicator.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\shieldFreqencySelect.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\shieldsEnableButton.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\shipDestroyedPopup.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\shipInternalView.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\signalQualityIndicator.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\snapSlider.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\targetsContainer.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\viewport3d.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screenComponents\warpControls.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crew1\singlePilotScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crew4\engineeringAdvancedScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crew4\operationsScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crew4\tacticalScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crew6\engineeringScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crew6\helmsScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crew6\relayScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crew6\scienceScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crew6\weaponsScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\crewStationScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\extra\damcon.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\extra\databaseScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\extra\powerManagement.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\extra\shipLogScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\gm\chatDialog.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\gm\gameMasterScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\gm\tweak.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\mainScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\topDownScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\screens\windowScreen.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\script.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\shipTemplate.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\artifact.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\asteroid.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\beamEffect.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\blackHole.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\cpuShip.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\electricExplosionEffect.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\EMPMissile.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\explosionEffect.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\homingMissile.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\hvli.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\mine.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\missileWeapon.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\nebula.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\nuke.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\playerSpaceship.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\scanProbe.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\shipTemplateBasedObject.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\spaceObject.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\spaceship.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\spaceshipParts\beamWeapon.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\spaceshipParts\weaponTube.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\spaceStation.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\supplyDrop.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\warpJammer.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\wormHole.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\threatLevelEstimate.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\tutorialGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\EmptyEpsilon\src\ai\ai.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\ai\aiFactory.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\ai\fighterAI.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\ai\missileVolleyAI.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\beamTemplate.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\commsScriptInterface.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\epsilonServer.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\factionInfo.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\featureDefs.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gameGlobalInfo.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\GMScriptCallback.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\colorConfig.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\debugRenderer.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_advancedscrolltext.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_arrow.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_arrowbutton.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_autolayout.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_button.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_canvas.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_container.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_element.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_entrylist.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_image.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_keyvaluedisplay.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_label.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_listbox.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_overlay.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_panel.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_progressbar.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_resizabledialog.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_rotationdial.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_scrollbar.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_scrolltext.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_selector.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_slider.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_textentry.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\gui2_togglebutton.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\mouseRenderer.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\gui\scriptError.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\dmx512SerialDevice.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\enttecDMXProDevice.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\hardwareController.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\hardwareMappingEffects.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\hardwareOutputDevice.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\sACNDMXDevice.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\serialDriver.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\virtualOutputDevice.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\httpScriptAccess.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\main.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\menus\autoConnectScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\menus\joinServerMenu.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\menus\mainMenus.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\menus\optionsMenu.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\menus\serverBrowseMenu.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\menus\serverCreationScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\menus\shipSelectionScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\mesh.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\missileWeaponData.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\modelData.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\modelInfo.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\mouseCalibrator.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\packResourceProvider.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\particleEffect.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\pathPlanner.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\playerInfo.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\preferenceManager.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\repairCrew.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\scienceDatabase.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\aimLock.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\alertOverlay.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\beamFrequencySelector.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\beamTargetSelector.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\combatManeuver.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\commsOverlay.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\databaseView.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\dockingButton.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\frequencyCurve.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\globalMessage.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\impulseControls.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\indicatorOverlays.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\jumpControls.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\jumpIndicator.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\mainScreenControls.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\missileTubeControls.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\noiseOverlay.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\openCommsButton.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\powerDamageIndicator.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\radarView.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\rawScannerDataRadarOverlay.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\rotatingModelView.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\scanningDialog.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\scanTargetButton.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\selfDestructButton.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\selfDestructEntry.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\selfDestructIndicator.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\shieldFreqencySelect.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\shieldsEnableButton.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\shipDestroyedPopup.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\shipInternalView.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\signalQualityIndicator.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\snapSlider.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\targetsContainer.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\viewport3d.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screenComponents\warpControls.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crew1\singlePilotScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crew4\engineeringAdvancedScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crew4\operationsScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crew4\tacticalScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crew6\engineeringScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crew6\helmsScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crew6\relayScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crew6\scienceScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crew6\weaponsScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\crewStationScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\extra\damcon.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\extra\databaseScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\extra\powerManagement.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\extra\shipLogScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\gm\chatDialog.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\gm\gameMasterScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\gm\tweak.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\mainScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\topDownScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\screens\windowScreen.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\script.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\shipTemplate.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\artifact.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\asteroid.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\beamEffect.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\blackHole.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\cpuShip.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\electricExplosionEffect.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\EMPMissile.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\explosionEffect.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\homingMissile.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\hvli.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\mine.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\missileWeapon.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\nebula.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\nuke.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\playerSpaceship.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\scanProbe.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\shipTemplateBasedObject.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\spaceObject.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\spaceship.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\spaceshipParts\beamWeapon.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\spaceshipParts\weaponTube.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\spaceStation.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\supplyDrop.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\warpJammer.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\wormHole.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\threatLevelEstimate.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\tutorialGame.h" />
+    <ClInclude Include="unistd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeriousProton\SeriousProton.vcxproj">
+      <Project>{b05b8321-e1a1-4f82-9726-c670d0b4e45f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\sfml-system.redist.2.3.2.0\build\native\sfml-system.redist.targets" Condition="Exists('..\packages\sfml-system.redist.2.3.2.0\build\native\sfml-system.redist.targets')" />
+    <Import Project="..\packages\sfml-system.2.3.2.0\build\native\sfml-system.targets" Condition="Exists('..\packages\sfml-system.2.3.2.0\build\native\sfml-system.targets')" />
+    <Import Project="..\packages\sfml-window.redist.2.3.2.0\build\native\sfml-window.redist.targets" Condition="Exists('..\packages\sfml-window.redist.2.3.2.0\build\native\sfml-window.redist.targets')" />
+    <Import Project="..\packages\sfml-window.2.3.2.0\build\native\sfml-window.targets" Condition="Exists('..\packages\sfml-window.2.3.2.0\build\native\sfml-window.targets')" />
+    <Import Project="..\packages\sfml-graphics.redist.2.3.2.0\build\native\sfml-graphics.redist.targets" Condition="Exists('..\packages\sfml-graphics.redist.2.3.2.0\build\native\sfml-graphics.redist.targets')" />
+    <Import Project="..\packages\sfml-graphics.2.3.2.0\build\native\sfml-graphics.targets" Condition="Exists('..\packages\sfml-graphics.2.3.2.0\build\native\sfml-graphics.targets')" />
+    <Import Project="..\packages\sfml-audio.redist.2.3.2.0\build\native\sfml-audio.redist.targets" Condition="Exists('..\packages\sfml-audio.redist.2.3.2.0\build\native\sfml-audio.redist.targets')" />
+    <Import Project="..\packages\sfml-audio.2.3.2.0\build\native\sfml-audio.targets" Condition="Exists('..\packages\sfml-audio.2.3.2.0\build\native\sfml-audio.targets')" />
+    <Import Project="..\packages\sfml-network.redist.2.3.2.0\build\native\sfml-network.redist.targets" Condition="Exists('..\packages\sfml-network.redist.2.3.2.0\build\native\sfml-network.redist.targets')" />
+    <Import Project="..\packages\sfml-network.2.3.2.0\build\native\sfml-network.targets" Condition="Exists('..\packages\sfml-network.2.3.2.0\build\native\sfml-network.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\sfml-system.redist.2.3.2.0\build\native\sfml-system.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-system.redist.2.3.2.0\build\native\sfml-system.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-system.2.3.2.0\build\native\sfml-system.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-system.2.3.2.0\build\native\sfml-system.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-window.redist.2.3.2.0\build\native\sfml-window.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-window.redist.2.3.2.0\build\native\sfml-window.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-window.2.3.2.0\build\native\sfml-window.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-window.2.3.2.0\build\native\sfml-window.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-graphics.redist.2.3.2.0\build\native\sfml-graphics.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-graphics.redist.2.3.2.0\build\native\sfml-graphics.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-graphics.2.3.2.0\build\native\sfml-graphics.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-graphics.2.3.2.0\build\native\sfml-graphics.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-audio.redist.2.3.2.0\build\native\sfml-audio.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-audio.redist.2.3.2.0\build\native\sfml-audio.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-audio.2.3.2.0\build\native\sfml-audio.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-audio.2.3.2.0\build\native\sfml-audio.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-network.redist.2.3.2.0\build\native\sfml-network.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-network.redist.2.3.2.0\build\native\sfml-network.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\sfml-network.2.3.2.0\build\native\sfml-network.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-network.2.3.2.0\build\native\sfml-network.targets'))" />
+  </Target>
+</Project>
