@@ -24,6 +24,7 @@ thumbs.db
 
 # Visual Studio
 *.VC.db
+*.VC.opendb
 .vs
 *.vcxproj.user
 ipch
