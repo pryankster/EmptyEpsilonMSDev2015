@@ -171,6 +171,7 @@
     <ClCompile Include="..\..\EmptyEpsilon\src\hardware\hardwareOutputDevice.cpp" />
     <ClCompile Include="..\..\EmptyEpsilon\src\hardware\sACNDMXDevice.cpp" />
     <ClCompile Include="..\..\EmptyEpsilon\src\hardware\serialDriver.cpp" />
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\uDMXDevice.cpp" />
     <ClCompile Include="..\..\EmptyEpsilon\src\hardware\virtualOutputDevice.cpp" />
     <ClCompile Include="..\..\EmptyEpsilon\src\httpScriptAccess.cpp" />
     <ClCompile Include="..\..\EmptyEpsilon\src\main.cpp" />
@@ -326,6 +327,7 @@
     <ClInclude Include="..\..\EmptyEpsilon\src\hardware\hardwareOutputDevice.h" />
     <ClInclude Include="..\..\EmptyEpsilon\src\hardware\sACNDMXDevice.h" />
     <ClInclude Include="..\..\EmptyEpsilon\src\hardware\serialDriver.h" />
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\uDMXDevice.h" />
     <ClInclude Include="..\..\EmptyEpsilon\src\hardware\virtualOutputDevice.h" />
     <ClInclude Include="..\..\EmptyEpsilon\src\httpScriptAccess.h" />
     <ClInclude Include="..\..\EmptyEpsilon\src\main.h" />

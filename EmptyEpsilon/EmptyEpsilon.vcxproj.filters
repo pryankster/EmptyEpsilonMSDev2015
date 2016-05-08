@@ -471,6 +471,9 @@
     <ClCompile Include="..\..\EmptyEpsilon\src\spaceObjects\spaceshipParts\weaponTube.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\EmptyEpsilon\src\hardware\uDMXDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\EmptyEpsilon\src\beamTemplate.h">
@@ -933,6 +936,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\EmptyEpsilon\src\spaceObjects\spaceshipParts\weaponTube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EmptyEpsilon\src\hardware\uDMXDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
